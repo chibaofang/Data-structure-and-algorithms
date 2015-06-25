@@ -11,6 +11,35 @@ This repository store the source codes for baisic data strutures and algorithms.
 
 ###tree
 ```
+/*tree traversal*/
+void inorder(tree_pointer ptr)
+{
+  if (ptr){
+    inorder(ptr->left_child);
+    printf("%d",ptr_data);
+    inorder(ptr->right_child);
+  }
+}
+
+void preorder(tree_pointer ptr)
+{
+  if(ptr){
+    printf("%d",ptr_data);
+    inorder(ptr->left_child);
+    inorder(ptr->right_child);
+  }
+}
+
+void postorder(tree_pointer ptr)
+{
+  if(ptr){
+    inorder(ptr->left_child);
+    inorder(ptr->right_child);
+     printf("%d",ptr_data);
+  }
+}
+
+
 /*copy a binary tree*/
 tree_pointer copy(tree_pointer original) {
   tree_pointer temp;
@@ -27,6 +56,7 @@ tree_pointer copy(tree_pointer original) {
   }
   return NULL;
 }
+
 
 /*equal or not*/
 int equal(tree_pointer first, tree_pointer second) {

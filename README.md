@@ -1,7 +1,15 @@
 # Data-structure-and-algorithms
 This repository store the source codes for baisic data strutures and algorithms. Most of them are written by myself, while some of them are excellent code (modified) from the internet. What is certain is that they are right.
 
-##tree
+##Data Structure
+
+###linked_list
+
+###queue
+
+###stack
+
+###tree
 ```
 /*copy a binary tree*/
 tree_pointer copy(tree_pointer original) {
@@ -25,3 +33,10 @@ int equal(tree_pointer first, tree_pointer second) {
   return (!first && !second)||(first && second && (first->data == second->data) && equal(first->left_child, second_child) && (equal(first->right_child, second->right_child))) 
 }
 ```
+
+###graph
+
+
+
+##Algorithms
+
